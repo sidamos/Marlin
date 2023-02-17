@@ -26,7 +26,7 @@ Notable features compared to the original 2.0.6.1 firmware:
 - advanced pause
 - advanced OK
 
-See the commits for details.
+See the [commits](https://github.com/sidamos/Marlin/commits/2.0.9.5-Ender-2-Pro) for details.
 
 <h1>Original Marlin Readme below:</h1>
 
