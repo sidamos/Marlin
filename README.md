@@ -11,7 +11,8 @@ at the top of your stop Gcode in your slicer, so that it empties the buffers bef
 
 ## Features
 This builds on the Marlin 2.0.x branch and Marlin's example config for the
-Ender 2 Pro. It has additional features enabled.
+Ender 2 Pro and some configs have been copied from the Creality 2.0.6.0 GitHub repository. 
+It has additional features enabled.
 
 Not all features have been tested!
 
