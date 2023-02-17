@@ -1,3 +1,35 @@
+<h1>Marlin 2.0.x firmware for Creality Ender 2 Pro with 4.2.3 board</h1>
+This is a firmware only for the 4.2.3 board. If you have Marlin 2.0.6.1 as original firmware then you likely have the 4.2.3 board but it is more safe to actually open the printer and check.
+
+Use at your own risk! I am not responsible for anything that happens when you use this source 
+or the compiled firmware for your printer!
+
+This firmware has bigger buffers, so you have to put 
+- M400
+
+at the top of your stop Gcode in your slicer, so that it empties the buffers before cooling down the hotend!
+
+## Features
+This builds on the Marlin 2.0.x branch and Marlin's example config for the
+Ender 2 Pro. It has additional features enabled.
+
+Not all features have been tested!
+
+Notable features compared to the original 2.0.6.1 firmware:
+- builds on Marlin 2.0.9.5
+- bigger buffers, should work more reliably with OctoPrint
+- manual 9-point mesh bed leveling, also via menu
+- assisted 4-point bed tramming via menu
+- host action commands
+- host prompt support
+- long filename support
+- advanced pause
+- advanced OK
+
+See the commits for details.
+
+<h1>Original Marlin Readme below:</h1>
+
 <p align="center"><img src="buildroot/share/pixmaps/logo/marlin-outrun-nf-500.png" height="250" alt="MarlinFirmware's logo" /></p>
 
 <h1 align="center">Marlin 3D Printer Firmware</h1>
