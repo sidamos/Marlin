@@ -7,7 +7,7 @@ or the compiled firmware for your printer!
 This firmware has bigger buffers, so you have to put 
 - M400
 
-at the top of your stop Gcode in your slicer, so that it empties the buffers before cooling down the hotend!
+at the top of the end G-code in your slicer, so that it empties the buffers before cooling down!
 
 ## Features
 This builds on the Marlin 2.0.x branch and Marlin's example config for the
