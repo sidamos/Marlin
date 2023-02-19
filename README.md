@@ -1,11 +1,11 @@
-<h1>Marlin 2.0.x firmware for Creality Ender 2 Pro with 4.2.3 board</h1>
-This is a firmware only for the 4.2.3 board. If you have Marlin 2.0.6.1 as original firmware then you likely have the 4.2.3 board but it is more safe to actually open the printer and check.
+<h1>Marlin 2.0.9.5 firmware for Creality Ender 2 Pro with 4.2.3 board</h1>
+<span style="color:red">This is a firmware only for the 4.2.3 board.</span> If you have Marlin 2.0.6.1 as original firmware then you likely have the 4.2.3 board but it is more safe to actually open the printer and check.
 
 Use at your own risk! I am not responsible for anything that happens when you use this source 
 or the compiled firmware for your printer!
 
 This firmware has bigger buffers, so you have to put 
-- <font color="red">M400</font>
+- <span style="color:red">M400</span>
 
 at the top of the end G-code in your slicer, so that it empties the buffers before cooling down!
 
