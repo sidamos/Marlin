@@ -5,21 +5,29 @@ Use at your own risk! I am not responsible for anything that happens when you us
 or the compiled firmware for your printer!
 
 This firmware has bigger buffers, so you have to put 
-- M400
+- <font color="red">M400</font>
 
 at the top of the end G-code in your slicer, so that it empties the buffers before cooling down!
 
 ## Features
-This builds on the Marlin 2.0.x branch and Marlin's example config for the
-Ender 2 Pro and some configs have been copied from the Creality 2.0.6.0 GitHub repository. 
-It has additional features enabled.
+This builds on the Marlin 2.0.x LTS branch and Marlin's example config for the Ender 2 Pro.
 
-Not all features have been tested!
+Some config settings have been copied from the [Creality 2.0.6.0 GitHub repository](https://github.com/CrealityOfficial/Ender-2-Pro),
+for example the jerk default settings. You can also change those, if needed.
+
+The benchy prints in the same time and looks identical to me, compared to the [original 2.0.6.1 firmware](https://www.creality.com/de/pages/download-ender-2-pro) (thanks
+to the same jerk settings).
+
+PID default settings are from Marlin's example because it does not over shoot during initial heating and the
+temperature seems to be even more constant than the original firmware. But you can of course do your own
+PID auto-tuning or manually change the values.
+
+This firmware has additional features enabled. Not all features have been tested by me!
 
 Notable features compared to the original 2.0.6.1 firmware:
 - builds on Marlin 2.0.9.5
 - bigger buffers, should work more reliably with OctoPrint
-- manual 9-point mesh bed leveling, also via menu
+- [manual 9-point mesh bed leveling](https://marlinfw.org/docs/gcode/G029-mbl.html), also via menu
 - assisted 4-point bed tramming via menu
 - host action commands
 - host prompt support
